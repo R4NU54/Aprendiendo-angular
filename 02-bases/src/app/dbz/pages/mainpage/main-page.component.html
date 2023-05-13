@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col-7">
-    <dbz-list [characters]="charactersList" (onDeleteIndex)="onDeleteCharacter($event)"></dbz-list>
+    <dbz-list [characters]="characters" (onDeleteId)="onDeleteCharacter($event)"></dbz-list>
   </div>
   <div class="col-5">
     <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
