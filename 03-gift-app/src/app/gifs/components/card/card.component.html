@@ -1,0 +1,5 @@
+<div class="flex flex-col bg-slate-700 rounded shadow-md p-4">
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title"></shared-lazy-image>
+  <h3 class="text-xl font-semibold text-white p-2">{{ gif.title || 'No title' }}</h3>
+  <p class="text-gray-100">{{ gif.trending_datetime | date }}</p>
+</div>
