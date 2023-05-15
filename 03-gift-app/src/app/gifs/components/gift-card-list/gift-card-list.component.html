@@ -1,0 +1,9 @@
+<div class="row mt-4">
+  <div *ngFor="let gif of gifs" class="w-1/4 p-2">
+    <div class="bg-slate-700 rounded shadow-md p-4 text-center">
+      <img [src]="gif.images.downsized_medium.url" alt="gif.title" />
+      <h3 class="text-xl font-semibold text-white p-2">{{ gif.title }}</h3>
+      <!-- <p class="text-gray-100">{{ gif.trending_datetime | date }}</p> -->
+    </div>
+  </div>
+</div>

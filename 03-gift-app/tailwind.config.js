@@ -1,0 +1,10 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable semi */
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{html,ts}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/forms')],
+};
