@@ -20,14 +20,6 @@ export class MenuComponent implements OnInit {
           { label: 'No comunes', icon: 'pi pi-cog', routerLink: '/uncommon' },
         ],
       },
-      {
-        label: 'Pipes Personalizados',
-        items: [
-          { label: 'Textos y Fechas', icon: 'pi pi-calendar' },
-          { label: 'Números', icon: 'pi pi-refresh' },
-          { label: 'No comunes', icon: 'pi pi-cog' },
-        ],
-      },
     ];
   }
 }
