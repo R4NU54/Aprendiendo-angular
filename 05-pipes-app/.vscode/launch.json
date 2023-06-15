@@ -3,11 +3,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ng serve",
-      "type": "pwa-chrome",
+      "name": "Chrome",
+      "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
       "url": "http://localhost:4200/"
+    },
+    // {
+    //   "name": "Brave",
+    //   "type": "chrome",
+    //   "request": "launch",
+    //   "preLaunchTask": "npm: start",
+    //   "url": "http://localhost:4200/"
+    // },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Brave",
+      "runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+      "userDataDir": true,
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}"
     },
     {
       "name": "ng test",
@@ -15,6 +31,6 @@
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://localhost:9876/debug.html"
-    }
+    },
   ]
 }
