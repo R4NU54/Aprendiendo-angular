@@ -1,2 +1,30 @@
-<p>Heroes layout-page works!</p>
-<router-outlet></router-outlet>
+<mat-sidenav-container fullscreen>
+  <mat-toolbar
+    class="flex justify-content-between"
+    color="primary">
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h2 class="m-0">Heroes App</h2>
+    <button mat-raised-button>Log out</button>
+  </mat-toolbar>
+
+  <mat-sidenav
+    class=""
+    #sidenav
+    mode="push"
+    [ngStyle]="{ width: '250px' }">
+    <mat-nav-list>
+      <mat-list-item
+        *ngFor="let item of sideBarItems"
+        [routerLink]="item.url"
+        (click)="sidenav.toggle()">
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        <span matListItemTitle>{{ item.label }}</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <router-outlet class="p-2"></router-outlet>
+</mat-sidenav-container>

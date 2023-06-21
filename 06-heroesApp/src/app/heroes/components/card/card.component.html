@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ hero.superhero }}</mat-card-title>
+    <mat-card-subtitle>{{ hero.alter_ego }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    [src]="hero | heroImage"
+    [alt]="hero.superhero" />
+  <mat-card-content class="p-2">
+    <h3>{{ hero.publisher }}</h3>
+    <p>
+      <strong>Primera aparición:</strong> {{ hero.first_appearance }}
+      <br />
+      <mat-chip-listbox>
+        <mat-chip *ngFor="let item of hero.characters.split(',') | slice : 0 : 2">
+          {{ item }}
+        </mat-chip>
+      </mat-chip-listbox>
+    </p>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-actions class="flex justify-content-between">
+    <button
+      mat-button
+      color="primary"
+      [routerLink]="['/heroes/edit', hero.id]">
+      <mat-icon>search</mat-icon>
+      Edit
+    </button>
+    <button
+      mat-button
+      color="secondary"
+      [routerLink]="['/heroes/', hero.id]">
+      <mat-icon>more_horiz</mat-icon>
+      más
+    </button>
+  </mat-card-actions>
+</mat-card>

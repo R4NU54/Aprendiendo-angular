@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>¿Estas seguro?</h1>
+<div mat-dialog-content>
+  <p>Este proceso no es reversible.</p>
+</div>
+<div
+  mat-dialog-actions
+  class="justify-content-between">
+  <button
+    mat-raised-button
+    color="secondary"
+    (click)="onNoClick()">
+    No
+  </button>
+  <button
+    mat-raised-button
+    color="warn"
+    (click)="onConfirm()"
+    cdkFocusInitial>
+    Borrar
+  </button>
+</div>

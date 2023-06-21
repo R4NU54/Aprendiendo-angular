@@ -1,1 +1,36 @@
-<p>login-page works!</p>
+<div class="flex flex-column">
+  <span class="flex justify-content-center text-xl mb-4">
+    {{ 'log in to your account' | titlecase }}
+  </span>
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input
+      type="text"
+      matInput
+      name="user"
+      id="user" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input
+      type="password"
+      matInput
+      name="password"
+      id="pass" />
+  </mat-form-field>
+  <button
+    mat-button
+    mat-raised-button
+    color="primary">
+    <mat-icon>login</mat-icon>
+    Log in
+  </button>
+  <div class="flex justify-content-end mt-5">
+    Need an account?
+    <a
+      class="ml-2"
+      routerLink="/auth/register"
+      >Sign up</a
+    >
+  </div>
+</div>

@@ -7,5 +7,6 @@
   "quoteProps": "preserve",
   "bracketSpacing": true,
   "bracketSameLine": true,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "arrowParens": "avoid"
 }
