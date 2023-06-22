@@ -8,7 +8,14 @@
       <mat-icon>menu</mat-icon>
     </button>
     <h2 class="m-0">Heroes App</h2>
-    <button mat-raised-button>Log out</button>
+    <div>
+      <span class="mx-2">{{ currentUser?.email }}</span>
+      <button
+        (click)="logout()"
+        mat-raised-button>
+        Log out
+      </button>
+    </div>
   </mat-toolbar>
 
   <mat-sidenav
