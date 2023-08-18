@@ -1,0 +1,12 @@
+<h1>DashBoard</h1>
+
+<h4>Usuario:</h4>
+<pre> {{ user() | json }} </pre>
+
+<br />
+<!-- <button
+  class="btn"
+  routerLink="/auth/Login">
+  Login...
+</button> -->
+<button (click)="onLogOut()">Cerrar sesion</button>

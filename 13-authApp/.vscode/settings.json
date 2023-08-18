@@ -1,0 +1,5 @@
+{
+    "exportall.config.relExclusion": [
+        "/src/app/auth/interfaces/auth-status.enum.ts"
+    ]
+}
